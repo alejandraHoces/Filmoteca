@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Demo del star rating plugin para jquery modificado por miguel manchego" />
+<meta name="keywords" content="jquery, ajax, plugin" />
+<title>Rating Db</title>
+<!--
+<script language="javascript" type="text/javascript" src="js/firebug-lite.js"></script>
+-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/rating.js"></script>
+<link rel="stylesheet" type="text/css" href="css/rating.css" />
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#star1').rating('votar.php', {maxvalue: 5, curvalue:1, id:20});
+	$('#star2').rating('votar.php', {maxvalue: 5, curvalue:1, id:20});
+});
+</script>
+</head>
+<body>
+<div id="star1" class="rating">&nbsp;</div>
+<div id="star2" class="rating">&nbsp;</div>
+<a href="http://www.miguelmanchego.com/2009/star-rating-jquery-plugin/">Regresar al tutorial</a>
+</body>
+</html>

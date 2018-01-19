@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filmoteca</title>
+  <!-- Favicon -->
+  <!--<link rel="icon" type="image/png" href="assets/icons/logo.png">-->
+  <!-- Framework Boostrap CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <!-- Pluggin -->
+  <link rel="stylesheet" href="../vendors/pluggins/css/delete.gif">
+  <link rel="stylesheet" href="../vendors/pluggins/css/rating.css">
+  <link rel="stylesheet" href="../vendors/pluggins/css/star.gif">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+  <!--Barra de navegacion -->
+  <nav class="nav-wrapper bg-header" role="navigation">
+    <div class="container-fluid ">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed t-w" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+        <!--  <div class="div-user view-movile">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+          </div>-->
+        </button>
+        <img src="../assets/images/logo.png" alt="" class="img-responsive profile-logo">
+        <img src="../assets/icons/titulo.png" alt="" class="">
+        </div>
+    <!--  <div class="div-user view-desktop">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+      </div>
+      <div class="collapse navbar-collapse title-header" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#modal-sesion" data-toggle="modal">Iniciar Sesión</a>
+          </li>
+          <li>
+            <a href="#modal-registry" data-toggle="modal" class="t-w">Registrate</a>
+          </li>
+        </ul>
+      </div>-->
+    </div>
+  </nav>
+</header>
+  <main class="container-muvi1">
+    <div class="container">
+      <div class="row">
+        <div id="movie-info-picked" class="movie-info-picked">
+          <img src="" alt="">
+          <h4 class="title-muvi">Este es el nombre de la peli</h4>
+        </div>
+        <!-- El plugin de Estrellas -->
+        <div id="star1" class="rating">&nbsp;</div>
+      </div>
+    </div>
+  </main>
+  <section class="container-muvi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8">
+          <div id="movie-data-info">
+            <p class="hidden" id="imdb-code"></p>
+            <div id="plot">
+              <span>Plot</span>
+              <p></p>
+            </div>
+            <div id="actors">
+              <span>Actors</span>
+              <p></p>
+            </div>
+            <div id="awards">
+              <span>Awards</span>
+              <p></p>
+            </div>
+            <div id="year">
+              <span>Year</span>
+              <p></p>
+            </div>
+            <div id="genre">
+              <span>Genre</span>
+              <p></p>
+            </div>
+
+          </div>
+          <div class="movie-data-rating">
+            Ratings
+            <div id="imdb">
+              <span></span>
+              <p></p>
+            </div>
+            <div id="rotten-Tomatoes">
+              <span></span>
+              <p></p>
+            </div>
+            <div id="metacritic">
+              <span></span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" id="viewed-button" role="group">
+              <button type="button" class="btn btn-default btn-muvi">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="btn-group" id="add-button" role="group">
+              <button type="button" class="btn btn-default btn-muvi">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="btn-group" id="favourite-button" role="group">
+              <button type="button" class="btn btn-default btn-muvi ">
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+			<div class="row">
+				<div class="">
+					<form class="black articles-black">
+						<h3 class="yellow">Buscar Articulos</h3>
+						<br>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+								<input type="text" class="form-control input-black" placeholder="Busca tus articulos preferidos">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    <br>
+    <br>
+    <div class="container ">
+			<div class="row black post-black">
+				<h3 class="padding-left yellow">Comentar</h3>
+				<br>
+				<div class="col-xs-7">
+					<form class="">
+						<textarea class="form-control" rows="7"></textarea>
+						<br>
+					</form>
+				</div>
+				<div class="col-xs-2">
+					<button type="button" class="btn btn-lg yellow-bk">Publicar</button>
+				</div>
+			</div>
+		</div>
+    <div class="view-movile buttons-mobile">
+      <button type="button" name="button" class="btn-mobile">
+      <a href="../index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+      </button>
+      <button type="button" name="button" class="btn-mobile">
+      <a href="#"><i class="fa fa-question fa-lg" aria-hidden="true"></i></a>
+      </button>
+      <button type="button" name="button" class="btn-mobile">
+        <a href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i></a>
+      </button>
+    </div>
+</section>
+<footer class="view-desktop profile-footer text-center">
+© Copyright 2018 - Filmoteca.com
+</footer>
+</section>
+
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Boostrap -->
+  <script src="../vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Pluggins -->
+  <!-- <script src="../vendors/pluggins/js/firebug-lite.js"></script> -->
+  <script src="../vendors/pluggins/js/jquery.js"></script>
+  <script src="../vendors/pluggins/js/jquery-1.4.2.min.js"></script>
+  <script src="../vendors/pluggins/js/rating.js"></script>
+  <script src="../vendors/pluggins/votar.php"></script>
+  <!-- AXIOS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- JS Personalizado -->
+  <script type="text/javascript" src="../js/movie.js"></script>
+</body>
+
+</html>

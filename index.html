@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filmoteca</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/logo.png">
+  <!-- Framework Boostrap CSS -->
+  <link rel="stylesheet" href="vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="profile-muvi">
+  <header>
+    <!--Barra de navegacion -->
+    <nav class="nav-wrapper bg-header" role="navigation">
+      <div class="container-fluid ">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle collapsed t-w" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <div class="div-user view-movile">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+          </button>
+          <img src="assets/images/logo.png" alt="" class="img-responsive profile-logo">
+          <!--<p class="name-logo">Filmoteca</p>-->
+          <img src="assets/icons/titulo.png" alt="" class="">
+
+        </div>
+        <div class="div-user view-desktop">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+        </div>
+        <div class="collapse navbar-collapse title-header" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#modal-sesion" data-toggle="modal">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="#modal-registry" data-toggle="modal" class="t-w">Registrate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Modal Registrar -->
+  <div class="container">
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-registry">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="text-center">Únete a Filmoteca</h3>
+            <h5 class="text-center">Y agenda las peliculas que has visto o verás</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form class="col-xs-offset-1 col-xs-10">
+                <div class="input-group form-group">
+                  <label class="sr-only control-label">Nombre y apellido </label>
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                  <input id="names" class="form-control" type="text" placeholder="Nombre y apellido" />
+                </div>
+                <div class="input-group form-group">
+                  <label class="sr-only control-label">Correo </label>
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                  <input id="email" class="form-control" type="text" placeholder="Correo" />
+                </div>
+                <div class="input-group form-group">
+                  <label class="sr-only">Contraseña</label>
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </span>
+                  <input id="password" class="form-control" type="password" placeholder="Contraseña" name="pass" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" class="text-center">
+                  <span class="term-add">Estoy de acuerdo con los</span>
+                  <span class="terms">Terminos y servicios</span>
+                </div>
+                <div class="form-group col-xs-offset-2 col-xs-8">
+                  <button id="btnRegistry" class="btn form-control t-y bg-b t-b" data-dismiss="modal" disabled>Registrate</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Iniciar Sesion -->
+  <div class="container">
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-sesion">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4>Iniciar Sesión</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form class="col-xs-offset-1 col-xs-10">
+                <div class="input-group form-group">
+                  <label class="sr-only control-label">Usuario </label>
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                  <input id="user" class="form-control" type="text" placeholder="Correo" />
+                </div>
+                <div class="input-group form-group">
+                  <label class="sr-only">Contraseña</label>
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </span>
+                  <input id="key" class="form-control" type="password" placeholder="Contraseña" name="pass" />
+                </div>
+                <div class="form-group col-xs-offset-2 col-xs-8">
+                  <button id="btnAccess" class="btn bg-b form-control" disabled data-dismiss="modal">
+                    <span class="t-y t-b">Acceder</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carosuel -->
+  <section class="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://www.cinesparaguay.com.py/wp-content/uploads/2017/08/jumanji2.jpg" class="img-responsive" alt="...">
+          <div class="carousel-caption">
+            <h1>Guarda y Valora.</h1>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.theedgesusu.co.uk/wp-content/uploads/2017/11/coco.jpg" class="img-responsive" alt="...">
+          <div class="carousel-caption">
+            <h1>Olvidate de los días aburridos.</h1>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://s4.eestatic.com/2017/07/03/cultura/cine/Cine_228489623_38377958_1706x960.jpg" class="img-responsive" alt="...">
+          <div class="carousel-caption">
+            <h1>Registrate y usa Filmoteca como tu agenda de Peliculas.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Estrella -->
+  <section class="input-search-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="search-movie">
+            <div class="input-group">
+              <form id="search-form">
+                <input type="text" class="form-control" id="search-text-movie" placeholder="Busca tu peli">
+              </form>
+              <span class="input-group-btn">
+                <button class="btn btn-default icon-search-input" type="button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="predetermined-movies">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_SY1000_CR0,0,699,1000_AL_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">Coco</button>
+            <p class="hidden">tt2380307</p>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">Jumanji</button>
+            <p class="hidden">tt2283362</p>
+          </div>
+        </div>
+        <div class="hidden-xs col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BODkyNDIzNDAyM15BMl5BanBnXkFtZTgwNjU2NTI0NDM@._V1_SY1000_CR0,0,799,1000_AL_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">The Commuter</button>
+            <p class="hidden">tt1590193</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2NzQwNjY4M15BMl5BanBnXkFtZTgwOTM2MzkzMzI@._V1_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">Jeepers Creepers III</button>
+            <p class="hidden">tt1139592</p>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTEzMjk3NzkxMV5BMl5BanBnXkFtZTgwNjY2NDczNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">12 Strong</button>
+            <p class="hidden">tt1413492</p>
+          </div>
+        </div>
+        <div class="hidden-xs col-md-4 col-lg-4">
+          <div class="movie-box text-center">
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BYjQ0ZWJkYjMtYjJmYS00MjJiLTg3NTYtMmIzN2E2Y2YwZmUyXkEyXkFqcGdeQXVyNjk5NDA3OTk@._V1_SY1000_SX675_AL_.jpg">
+            <button type="button" class="btn btn-info click-movie-predetermined">The Greatest Showman</button>
+            <p class="hidden">tt1485796</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="movies-search-section">
+    <div class="container">
+      <div class="row">
+        <div id="movies-selected" class="row"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="view-desktop profile-footer text-center">
+    © Copyright 2018 - Filmoteca.com
+  </footer>
+  <!-- Libreria JQuery -->
+  <script src="vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Boostrap -->
+  <script src="vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <!-- Libreria Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Conexión con Firebase -->
+  <script src="js/conexion.js"></script>
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- JS Personalizado -->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

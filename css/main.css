@@ -1,0 +1,378 @@
+* {
+  font-family: 'Roboto Slab', serif;
+}
+/*------------ Vista principal ------------*/
+/* Colores de fondo */
+.bg-v {
+    background-color: #679797;
+}
+.bg-g {
+    background-color: gray;
+}
+.bg-b {
+    background-color: #282829;
+}
+.bg-y {
+    background-color: #F6EC14;
+}
+/* Colores de letra */
+.t-w {
+    color: #FFF;
+}
+.t-y {
+    color: #F6EC14;
+}
+.t-y:hover, .t-y:active {
+    color: #F6EC14;
+}
+.t-b {
+  font-weight: bold;
+}
+.div-user {
+  float: right;
+  margin: 0 10px;
+}
+.div-user i {
+  font-size: 2.5em;
+  font-weight: 400!important;
+  vertical-align: top;
+  padding: 5px;
+}
+.terms {
+    color: #0079bf;
+}
+.navbar-content span {
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+   background-color: #333;
+}
+#carousel-explication {
+    height: 250px;
+}
+.gallery figure {
+    padding: 10px;
+}
+.carousel, .carousel-inner > .item > img {
+  width: 100%;
+  height: 500px;
+}
+/*------------ buscador ------------*/
+
+/* Input Index */
+.input-search-section {
+  background-color: #282829;
+}
+
+.search-movie {
+  margin: 1.3em 0;
+}
+
+/* active para explorer */
+input#search-movie-input:focus, input#search-movie-input:active {
+  -moz-box-shadow: 0px 0px 2px 1px rgba(246,236,20,1);
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(246,236,20,1);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(246,236,20,1);
+  box-shadow: 0px 0px 2px 1px rgba(246,236,20,1);
+}
+
+.icon-search-input {
+  color: #F6EC14;
+  background-color: #282829;
+}
+.container-muvi1 {
+  background-color:black;
+  color: white;
+}
+.black {
+  background: black;
+}
+
+.yellow {
+  color: #F6EC14;
+}
+.container-muvi {
+  background-color:#282829;
+  color: white;
+}
+.btn-muvi {
+  background: #199fe8;
+  color: white;
+  border: 1px solid white;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.title-muvi {
+  font-size: 3.5rem;
+  color: white;
+  text-decoration: underline solid #F6EC14;
+  font-weight: 600;
+}
+.movie-box {
+  height: 53vh;
+}
+.articles-black {
+  padding: 2.5rem;
+}
+.yellow-bk {
+  color: white;
+  background: #199fe8;
+}
+
+.input-black {
+  background-color:#282829;
+  color: white;
+}
+.post-black {
+  padding: 2rem;
+}
+
+.movie-box img {
+  height: 80%;
+  width: 100%;
+}
+
+.movie-box h5 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Section Movies */
+.movies-search-section {
+  margin-top: 2rem;
+}
+
+/* Movie HTML */
+.movie-info-picked {
+  display: flex;
+  flex-direction: column;
+  text-align: -webkit-center;
+}
+
+#imdb-code {
+  display: none;
+}
+
+/* ------------estilos vista de perfil ------------*/
+.profile-logo {
+  width: 5rem;
+  display: inline-block;
+}
+.name-logo {
+  display: inline-block;
+}
+.bg-header {
+  background: #0d0d0d;
+  color: white;
+}
+.profile-bg {
+  background-image: url(../assets/images/cine.jpg);
+  background-size: cover;
+  height: 30vh;
+  max-width: 100%;
+  background-position:left;
+  margin-bottom: 0px;
+}
+.profile-user {
+  width: 7rem;
+  border-radius: 100%;
+  display: inline-block;
+}
+.card-profile {
+  background: #0d0d0d;
+  padding: 1rem 1.2rem 4rem ;
+  margin-top: 15rem;
+  color: white;
+  width: 25rem;
+}
+.card-profile p {
+  display: inline-block;
+}
+.profile-counter {
+  display: inline-block;
+}
+.profile-btn {
+  outline: none;
+  background: #199fe8;
+  color: white;
+  width: 8rem;
+  margin-top: 1rem;
+  text-align: center;
+  border: none;
+  }
+
+.profile-movies {
+  margin: 2rem 0;
+}
+.btn-mobile {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  background: #0d0d0d;
+  color: yellow;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.buttons-mobile {
+  position: fixed;
+  margin-top: 23.5rem;
+  margin-left: 30rem;
+}
+
+.profile-muvi {
+  background: #282829;
+}
+.profile-footer {
+  background: #0d0d0d;
+  height: 7vh;
+  color: white;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+}
+/*estilo para visualizar cuando se encuentre en mobile*/
+.view-movile {
+  display: block;
+}
+/*estilo para ocultar cuando se encuentre en tablet y desktop*/
+.view-desktop {
+  display: none;
+}
+.title-header li a {
+  color: white;
+}
+.dropdown-menu {
+  background-color: #282829;
+}
+.inputfile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  opacity: 0;
+}
+.caption {
+  position: relative;
+  right: 3.5rem;
+  top: 3rem;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  border: none;
+  background: #0d0d0d;
+}
+/*vista tablet*/
+@media (min-width: 768px) {
+  .profile-bg {
+    background-image: url(../assets/images/cine.jpg);
+    background-size: cover;
+    height: 50vh;
+    max-width: 100%;
+    background-position:left;
+    margin-bottom: 0px;
+  }
+  .profile-user {
+    width: 13rem;
+    border-radius: 100%;
+    margin-left: 4rem;
+  }
+  .card-profile {
+    margin-top: 20rem;
+    width: 25rem;
+    color: white;
+    text-align: center;
+  }
+  .card-profile p {
+    display: block;
+  }
+  .profile-btn {
+    outline: none;
+    background: #199fe8;
+    color: white;
+    border-radius: 0.5rem;
+    width: 8rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .view-movile {
+    display: none;
+  }
+  /*estilo para ocultar cuando se encuentre en tablet y desktop*/
+  .view-desktop {
+    display: block;
+  }
+  .inputfile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    opacity: 0;
+  }
+  .caption {
+    position: relative;
+    right: 5.5rem;
+    top: 6rem;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    background: #282829;
+  }
+}
+/*vista desktop*/
+@media (min-width: 1200px) {
+  .profile-bg {
+    background-image: url(../assets/images/cine.jpg);
+    background-size: cover;
+    height: 50vh;
+    max-width: 100%;
+    background-position:center;
+    margin-bottom: 0px;
+  }
+  .profile-user {
+    width: 15rem;
+    border-radius: 100%;
+  }
+  .card-profile {
+    margin-top: 25rem;
+    width: 35rem;
+    color: white;
+    text-align: center;
+  }
+  .card-profile p {
+    display: block;
+  }
+  .profile-btn {
+    outline: none;
+    background: #199fe8;
+    color: white;
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    text-align: center;
+  }
+  .view-movile {
+    display: none;
+  }
+  /*estilo para ocultar cuando se encuentre en tablet y desktop*/
+  .view-desktop {
+    display: block;
+  }
+}
+/* ------------fin estilos vista de perfil ------------*/

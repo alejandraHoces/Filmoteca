@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>profile</title>
+  <link rel="stylesheet" href="../vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegacion -->
+    <nav class="nav-wrapper bg-header" role="navigation">
+      <div class="container-fluid ">
+        <div class="navbar-header ">
+          <img src="../assets/images/logo.png" alt="" class="img-responsive profile-logo">
+          <img src="../assets/icons/titulo.png" alt="" class="">
+        </div>
+        <div class="collapse navbar-collapse title-header" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Ayuda</a>
+            </li>
+            <li>
+              <a href="#">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="profile-bg">
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-5 col-xs-10">
+          <form id="form1" runat="server">
+            <div class="card-profile">
+              <img src="../assets/images/user1.jpg" alt="user" class="img-responsive profile-user" id="image1">
+              <button class="caption" id="files" onclick="document.getElementById('file').click(); return false;">
+                <i class="glyphicon glyphicon-camera"></i>
+              </button>
+              <input class="inputfile" type="file" id="file" onchange="readURL(this);" accept="image/*" />
+              <span>
+                <p>Nombre Usuario</p>
+              </span>
+            </div>
+          </form>
+          <div class="profile-counter">
+            <button type="button" name="button" class="profile-btn">
+              <div id="counter">0</div>
+              <p>Vistos</p>
+            </button>
+            <button type="button" name="button" class="profile-btn">
+              <div id="counter">0</div>
+              <p>Guardados</p>
+            </button>
+            <button type="button" name="button" class="profile-btn">
+              <div id="counter">0</div>
+              <p>Favoritos</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="profile-muvi">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-6 col-sm-offset-2 col-sm-10 col-xs-offset-1 col-xs-10">
+          <img src="../assets/images/pelis1.png" alt="" class="img-responsive profile-movies">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <!--imagenes 8 y 6-->
+        </div>
+        <div class="view-movile buttons-mobile">
+          <button type="button" name="button" class="btn-mobile">
+          <a href="../index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+          </button>
+          <button type="button" name="button" class="btn-mobile">
+          <a href="#"><i class="fa fa-question fa-lg" aria-hidden="true"></i></a>
+          </button>
+          <button type="button" name="button" class="btn-mobile">
+            <a href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="view-desktop profile-footer text-center">
+    © Copyright 2018 - Filmoteca.com
+  </footer>
+
+  <!-- scripts -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
